@@ -1,0 +1,29 @@
+{
+  "name": "algo-js",
+  "version": "0.0.1",
+  "description": "Algorithms and Data Structures using Javascript.",
+  "repository": "https://github.com/nirajshr/algo-js",
+  "main": "js/app.js",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "watchify": "^2.1.1",
+    "jshint": "latest",
+    "babelify": ""
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "build-js": "browserify js/app.js -o js/bundle.js",
+    "lint": "jshint **.js",
+    "env": "env"
+  },
+  "author": "Niraj Shrestha",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
